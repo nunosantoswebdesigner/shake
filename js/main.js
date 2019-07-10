@@ -2,7 +2,7 @@ $( document ).ready(function() {
     console.log( "ready!" );
     
     $(".thankyou_message").hide();
-    $(".success-slide").hide();
+
     // swiper for slide views
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
@@ -24,10 +24,7 @@ $( document ).ready(function() {
     
     window.addEventListener('shake', function () {
         $("#my_form").submit();
-        $(".first-slide").hide();
-        $(".second-slide").hide();
-        $(".success-slide").show();
-        // stopShake();
+        stopShake();
     }, false);
     
     //stop listening

@@ -19,9 +19,16 @@
                     <img class="footer_image_letters" src="img/home_2.svg">
                 </div>
                 <div class="swiper-slide second-slide">
-                    <form id="my_form" class="gform pure-form pure-form-stacked" method="POST" action="https://script.google.com/macros/s/AKfycbyCg3GVQ-fgXKuhqNq0t2aDim0egIX49JFBGhy8/exec">
+                    <form onsubmit="return tanks()" id="my_form" class="gform pure-form pure-form-stacked" method="POST" action="https://script.google.com/macros/s/AKfycbyCg3GVQ-fgXKuhqNq0t2aDim0egIX49JFBGhy8/exec">
                         <input id="input_email" type="email" name="email" class="input_field" placeholder="Email">
                     </form>
+                    <script>
+                        function tanks() {
+                            $(".thankyou_message").show();
+                            $(".first-slide").hide();
+                            $(".second-slide").hide();
+                        } 
+                    </script>
                     <img class="header_image" src="img/header.svg">
                     <img id="footer_image_letters_on" class="footer_image_letters footer_image_letters_on" src="img/email_1.svg">
                     <img class="footer_image_letters" src="img/email_2.svg".svg">
@@ -32,12 +39,12 @@
                     <img class="footer_image_letters" src="img/shake_2.svg">
                     <img class="footer_image_banner" src="img/shake_3.svg">
                 </div>
-            </div>
                 <div class="swiper-slide thankyou_message">
                     <img class="header_image" src="img/success_1.svg">
                     <img class="footer_image_letters" src="img/success_2.svg">
                     <img class="footer_image_banner" src="img/success_3.svg">
                 </div>
+            </div>
             <div class="swiper-pagination"></div>
         </div>
     </div>
