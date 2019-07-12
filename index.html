@@ -24,9 +24,12 @@
                     </form>
                     <script>
                         function tanks() {
-                            $(".thankyou_message").show();
-                            $(".first-slide").hide();
-                            $(".second-slide").hide();
+                            setInterval(() => {
+
+                                $(".thankyou_message").show();
+                                $(".first-slide").hide();
+                                $(".second-slide").hide();
+                            }, 4000)
                         } 
                     </script>
                     <img class="header_image" src="img/header.svg">
