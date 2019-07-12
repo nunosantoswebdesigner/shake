@@ -1,9 +1,7 @@
 $( document ).ready(function() {
     console.log( "ready!" );
-    
     $(".thankyou_message").hide();
 
-    // swiper for slide views
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         slidesPerView: 1,
@@ -11,6 +9,8 @@ $( document ).ready(function() {
         spaceBetween: 30,
         keyboardControl: true
     });
+    console.log(swiper)
+
     $("input").focus(function(){
         $("#footer_image_letters_on").hide();
     });
@@ -23,7 +23,14 @@ $( document ).ready(function() {
     shakeEvent.start();
     
     window.addEventListener('shake', function () {
-        $("#my_form").submit();
+        setInterval( () => {
+
+            $(".thankyou_message").show();
+            $(".first-slide").hide();
+            $(".second-slide").hide();
+        }, 4500)
+        $("#my_form").submit().delay('5000');
+
         stopShake();
     }, false);
     
