@@ -57,6 +57,13 @@ input{
     height: 100vh;
 }
 
+form {
+    z-index: 99999 !important;
+    height: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 .swiper-slide {
     max-height: 100vh;
@@ -72,13 +79,6 @@ input{
         position: absolute;
         top: 15%;
 
-    }
-    form {
-        z-index: 99999 !important;
-        height: 0;
-        width: 100%;
-        margin: 0;
-        padding: 0;
     }
     .footer_image_letters {
         bottom: 130px;
@@ -118,4 +118,8 @@ p {
     height: 5px;
     background: @border;
     border-radius: 0;
+}
+
+.thankyou_message {
+    display: none;
 }

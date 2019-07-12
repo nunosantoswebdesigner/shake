@@ -13,6 +13,7 @@
     <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
+    <form id="my_form" class="gform pure-form pure-form-stacked" method="POST" action="https://script.google.com/macros/s/AKfycbyCg3GVQ-fgXKuhqNq0t2aDim0egIX49JFBGhy8/exec">
     <div class="wrapper">
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -21,33 +22,69 @@
                     <img class="footer_image_letters" src="img/home_2.svg">
                 </div>
                 <div class="swiper-slide second-slide slide">
-                    <form id="my_form" class="gform pure-form pure-form-stacked" method="POST" action="https://script.google.com/macros/s/AKfycbyCg3GVQ-fgXKuhqNq0t2aDim0egIX49JFBGhy8/exec">
                         <input id="input_email" type="email" name="email" class="input_field" placeholder="Email">
-                    </form>
-                    <img class="header_image" src="img/header.svg">
-                    <img id="footer_image_letters_on" class="footer_image_letters footer_image_letters_on" src="img/email_1.svg">
-                    <img class="footer_image_letters" src="img/email_2.svg".svg">
-                    <img class="footer_image_banner" src="img/email_3.svg">
+                        <img class="header_image" src="img/header.svg">
+                        <img id="footer_image_letters_on" class="footer_image_letters footer_image_letters_on" src="img/email_1.svg">
+                        <img class="footer_image_letters" src="img/email_2.svg".svg">
+                        <img class="footer_image_banner" src="img/email_3.svg">
+                    </div>
+                    <div class="swiper-slide thirt-slide slide">
+                        <img class="header_image" src="img/shake_1.svg">
+                        <img class="footer_image_letters" src="img/shake_2.svg">
+                        <img class="footer_image_banner" src="img/shake_3.svg">
+                    </div>
+                    <div class="swiper-slide thankyou_message">
+                        <img class="header_image" src="img/success_1.svg">
+                        <img class="footer_image_letters" src="img/success_2.svg">
+                        <img class="footer_image_banner" src="img/success_3.svg">
+                    </div>
+                    <div class="thankyou_message" style="display:none;">
+                            <h2><em>Thanks</em> for contacting us!
+                                We will get back to you soon!</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
-                <div class="swiper-slide thirt-slide slide">
-                    <img class="header_image" src="img/shake_1.svg">
-                    <img class="footer_image_letters" src="img/shake_2.svg">
-                    <img class="footer_image_banner" src="img/shake_3.svg">
-                </div>
-                <div class="swiper-slide thankyou_message">
-                    <img class="header_image" src="img/success_1.svg">
-                    <img class="footer_image_letters" src="img/success_2.svg">
-                    <img class="footer_image_banner" src="img/success_3.svg">
-                </div>
-                <div class="thankyou_message" style="display:none;">
-                    <h2><em>Thanks</em> for contacting us!
-                        We will get back to you soon!</h2>
-                </div>
-            </div>
-                <div class="swiper-pagination"></div>
-        </div>
-    </div>
+            </form>
     <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+    <script>
+
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 1,
+            paginationClickable: true,
+            spaceBetween: 30,
+            keyboardControl: true
+        });
+
+        var shakeEvent = new Shake({
+            threshold: 15
+        });
+        shakeEvent.start();
+        window.addEventListener('shake', function () {
+            $(".first-slide").hide();
+            $(".second-slide").hide();
+            $(".thirt-slide").hide();
+            setInterval( () => {
+
+                $(".thankyou_message").show();
+            }, 4500)
+            $("#my_form").submit();
+
+            // stopShake();
+        }, true);
+        
+        // //stop listening
+        // function stopShake() {
+        //     shakeEvent.stop();
+        // }
+        
+        //check if shake is supported or not.
+        if (!("ondevicemotion" in window)) {
+            alert("Not Supported");
+        }
+    </script>
 </body>
 
 </html>

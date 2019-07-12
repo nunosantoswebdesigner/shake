@@ -50,6 +50,13 @@ input:focus::placeholder {
   width: 100vw;
   height: 100vh;
 }
+form {
+  z-index: 99999 !important;
+  height: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 .swiper-slide {
   max-height: 100vh;
   text-align: center;
@@ -63,13 +70,6 @@ input:focus::placeholder {
 .swiper-slide .header_image {
   position: absolute;
   top: 15%;
-}
-.swiper-slide form {
-  z-index: 99999 !important;
-  height: 0;
-  width: 100%;
-  margin: 0;
-  padding: 0;
 }
 .swiper-slide .footer_image_letters {
   bottom: 130px;
@@ -103,4 +103,7 @@ p {
   height: 5px;
   background: #d8d8d8;
   border-radius: 0;
+}
+.thankyou_message {
+  display: none;
 }
