@@ -6,16 +6,16 @@ Links:
 [Repo](https://nunosantoswebdesigner.github.io/shake)
 
 
-![home](https://github.com/nunosantoswebdesigner/pdfs/blob/gh-pages/images/screen_shake_1.png)
-![menu](https://github.com/nunosantoswebdesigner/pdfs/blob/gh-pages/images/screen_shake_2.png)
-![item](https://github.com/nunosantoswebdesigner/pdfs/blob/gh-pages/images/screen_shake_3.png)
-![item](https://github.com/nunosantoswebdesigner/pdfs/blob/gh-pages/images/screen_shake_4.png)
-![item](https://github.com/nunosantoswebdesigner/pdfs/blob/gh-pages/images/screen_shake_5.png)
-![item](https://github.com/nunosantoswebdesigner/pdfs/blob/gh-pages/images/screen_shake_6.png)
-![item](https://github.com/nunosantoswebdesigner/pdfs/blob/gh-pages/images/screen_shake_7.png)
-![item](https://github.com/nunosantoswebdesigner/pdfs/blob/gh-pages/images/screen_shake_8.png)
-![item](https://github.com/nunosantoswebdesigner/pdfs/blob/gh-pages/images/screen_shake_9.png)
-![home](https://github.com/nunosantoswebdesigner/pdfs/blob/gh-pages/images/screen_shake_0.pdf)
+![home](https://github.com/nunosantoswebdesigner/pdfs/blob/gh-pages/images/shake_1.png)
+![menu](https://github.com/nunosantoswebdesigner/pdfs/blob/gh-pages/images/shake_2.png)
+![item](https://github.com/nunosantoswebdesigner/pdfs/blob/gh-pages/images/shake_3.png)
+![item](https://github.com/nunosantoswebdesigner/pdfs/blob/gh-pages/images/shake_4.png)
+![item](https://github.com/nunosantoswebdesigner/pdfs/blob/gh-pages/images/shake_5.png)
+![item](https://github.com/nunosantoswebdesigner/pdfs/blob/gh-pages/images/shake_6.png)
+![item](https://github.com/nunosantoswebdesigner/pdfs/blob/gh-pages/images/shake_7.png)
+![item](https://github.com/nunosantoswebdesigner/pdfs/blob/gh-pages/images/shake_8.png)
+![item](https://github.com/nunosantoswebdesigner/pdfs/blob/gh-pages/images/shake_9.png)
+![home](https://github.com/nunosantoswebdesigner/pdfs/blob/gh-pages/images/shake_0.pdf)
 
 
 
