@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,31 @@
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
     <script type="text/javascript" src="https://cdn.rawgit.com/alexgibson/shake.js/master/shake.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </head>
+
 <body>
-    <form id="my_form" class="gform pure-form pure-form-stacked" method="POST" action="https://script.google.com/macros/s/AKfycbyCg3GVQ-fgXKuhqNq0t2aDim0egIX49JFBGhy8/exec">
-    <div class="wrapper">
+    <form id="my_form" class="gform pure-form pure-form-stacked" method="POST"
+        action="https://script.google.com/macros/s/AKfycbyCg3GVQ-fgXKuhqNq0t2aDim0egIX49JFBGhy8/exec">
+        <input id="to_hide" type="email" name="email" class="input_field" placeholder="Email" />
+     
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide first-slide">
+                        <img class="header_image" src="img/home_1.svg">
+                        <img class="footer_image_letters" src="img/home_2.svg">
+                    </div>
+                    <div class="swiper-slide thankyou_message" style="display:none;">
+                        <img class="header_image" src="img/success_1.svg">
+                        <img class="footer_image_letters" src="img/success_2.svg">
+                        <img class="footer_image_banner" src="img/success_3.svg">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+           
+    </form>
+    <!-- <div class="wrapper">
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide first-slide slide">
@@ -22,7 +42,6 @@
                     <img class="footer_image_letters" src="img/home_2.svg">
                 </div>
                 <div class="swiper-slide second-slide slide">
-                        <input id="input_email" type="email" name="email" class="input_field" placeholder="Email">
                         <img class="header_image" src="img/header.svg">
                         <img id="footer_image_letters_on" class="footer_image_letters footer_image_letters_on" src="img/email_1.svg">
                         <img class="footer_image_letters" src="img/email_2.svg".svg">
@@ -45,11 +64,10 @@
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
-                </div>
-            </form>
-    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
-    <script>
+                </div> -->
 
+   
+    <script>
         var swiper = new Swiper('.swiper-container', {
             pagination: '.swiper-pagination',
             slidesPerView: 1,
@@ -63,23 +81,16 @@
         });
         shakeEvent.start();
         window.addEventListener('shake', function () {
-            $(".first-slide").hide();
-            $(".second-slide").hide();
-            $(".thirt-slide").hide();
-            setInterval( () => {
-
-                $(".thankyou_message").show();
-            }, 4500)
             $("#my_form").submit();
 
-            // stopShake();
+            stopShake();
         }, true);
-        
-        // //stop listening
-        // function stopShake() {
-        //     shakeEvent.stop();
-        // }
-        
+
+        //stop listening
+        function stopShake() {
+            shakeEvent.stop();
+        }
+
         //check if shake is supported or not.
         if (!("ondevicemotion" in window)) {
             alert("Not Supported");

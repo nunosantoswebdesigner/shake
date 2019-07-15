@@ -1,11 +1,8 @@
-html,
-body {
-  position: relative;
-  height: 100%;
-}
 body {
   background: #485563;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  position: relative;
+  height: 100%;
   font-size: 14px;
   color: #000;
   margin: 0;
@@ -70,6 +67,8 @@ form {
 .swiper-slide .header_image {
   position: absolute;
   top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .swiper-slide .footer_image_letters {
   bottom: 130px;

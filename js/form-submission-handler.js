@@ -1,10 +1,4 @@
 (function() {
-
-    
-    $("input").focus(function(){
-        $("#footer_image_letters_on").hide();
-    });
-
     function validEmail(email) {
       var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
       return re.test(email);
@@ -65,8 +59,8 @@
       return formData;
     }
   
-    function handleFormSubmit(event) {  // handles form submit without any jquery
-      event.preventDefault();           // we are submitting via xhr below
+    function handleFormSubmit(event) {
+      event.preventDefault();
       var form = event.target;
       var data = getFormData(form);         // get the values submitted in the form
   
@@ -92,13 +86,14 @@
         xhr.onreadystatechange = function() {
             console.log(xhr.status, xhr.statusText);
             console.log(xhr.responseText);
-            var formElements = form.querySelector(".slide")
+            
+            var formElements = form.querySelector(".input_field")
             if (formElements) {
-              formElements.style.display = "none"; // hide form
+              formElements.style.display = "none";
             }
             var thankYouMessage = form.querySelector(".thankyou_message");
             if (thankYouMessage) {
-              thankYouMessage.style.display = "block";
+              thankYouMessage.style.display = "flex !important";
             }
             return;
         };
