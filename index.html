@@ -7,8 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nuno Santos | Newsletters Shake form</title>
     <meta name="description" content="Nuno Santos Newsletters Shake form" />
-    <meta name="keywords" content="shake_event, javascript, nuno, santos, nuno_santos, caldas_da_rainha, foz_do_arelho, frontend, front-end, webdesign, web, websites, webservices, freelancer, webfreelancer, webdesigner, newwebsite, queroumsite, portugal, webdesign portugal, webfreelancerportugal, websitesportugal, freelancerportugal, webdesignerportugal, webservicesportugal, slideshow, reveal, effect, animation, web design, template, demo" />
-    <meta name="author" content="nuno santos"/>
+    <meta name="keywords"
+        content="shake_event, javascript, nuno, santos, nuno_santos, caldas_da_rainha, foz_do_arelho, frontend, front-end, webdesign, web, websites, webservices, freelancer, webfreelancer, webdesigner, newwebsite, queroumsite, portugal, webdesign portugal, webfreelancerportugal, websitesportugal, freelancerportugal, webdesignerportugal, webservicesportugal, slideshow, reveal, effect, animation, web design, template, demo" />
+    <meta name="author" content="nuno santos" />
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -20,7 +21,7 @@
 </head>
 
 <body>
-    <form id="my_form" class="gform pure-form pure-form-stacked" method="POST"
+    <!-- <form id="my_form" class="gform pure-form pure-form-stacked" method="POST"
         action="https://script.google.com/macros/s/AKfycbyCg3GVQ-fgXKuhqNq0t2aDim0egIX49JFBGhy8/exec">
         <input id="to_hide" type="email" name="email" class="input_field" placeholder="Email" />
      
@@ -29,16 +30,22 @@
                         <img class="header_image" src="img/home_1.svg">
                         <img class="footer_image_letters" src="img/home_2.svg">
                     </div>
+                    <div class="swiper-slide second-slide slide">
+                        <img class="header_image" src="img/header.svg">
+                        <img id="footer_image_letters_on" class="footer_image_letters footer_image_letters_on" src="img/email_1.svg">
+                        <img class="footer_image_letters" src="img/email_2.svg".svg">
+                        <img class="footer_image_banner" src="img/email_3.svg">
+                    </div>
                     <div class="swiper-slide thankyou_message" style="display:none;">
                         <img class="header_image" src="img/success_1.svg">
                         <img class="footer_image_letters" src="img/success_2.svg">
                         <img class="footer_image_banner" src="img/success_3.svg">
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-pagination"></div>
            
-    </form>
-    <!-- <div class="wrapper">
+    </form> -->
+    <div class="wrapper">
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide first-slide slide">
@@ -46,31 +53,33 @@
                     <img class="footer_image_letters" src="img/home_2.svg">
                 </div>
                 <div class="swiper-slide second-slide slide">
-                        <img class="header_image" src="img/header.svg">
-                        <img id="footer_image_letters_on" class="footer_image_letters footer_image_letters_on" src="img/email_1.svg">
-                        <img class="footer_image_letters" src="img/email_2.svg".svg">
-                        <img class="footer_image_banner" src="img/email_3.svg">
-                    </div>
-                    <div class="swiper-slide thirt-slide slide">
-                        <img class="header_image" src="img/shake_1.svg">
-                        <img class="footer_image_letters" src="img/shake_2.svg">
-                        <img class="footer_image_banner" src="img/shake_3.svg">
-                    </div>
-                    <div class="swiper-slide thankyou_message">
-                        <img class="header_image" src="img/success_1.svg">
-                        <img class="footer_image_letters" src="img/success_2.svg">
-                        <img class="footer_image_banner" src="img/success_3.svg">
-                    </div>
-                    <div class="thankyou_message" style="display:none;">
-                            <h2><em>Thanks</em> for contacting us!
-                                We will get back to you soon!</h2>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div> -->
+                    <img class="header_image" src="img/header.svg">
+                    <form id="my_form" class="gform pure-form pure-form-stacked" method="POST"
+                        action="https://script.google.com/macros/s/AKfycbyCg3GVQ-fgXKuhqNq0t2aDim0egIX49JFBGhy8/exec">
+                        <input id="to_hide" type="email" name="email" class="input_field" placeholder="Email" />
+                    </form>
+                    <img id="footer_image_letters_on" class="footer_image_letters footer_image_letters_on"
+                        src="img/email_1.svg">
+                    <img class="footer_image_letters" src="img/email_2.svg" .svg">
+                    <img class="footer_image_banner" src="img/email_3.svg">
+                </div>
+                <div class="swiper-slide thirt-slide slide">
+                    <img class="header_image" src="img/shake_1.svg">
+                    <img class="footer_image_letters" src="img/shake_2.svg">
+                    <img class="footer_image_banner" src="img/shake_3.svg">
+                </div>
+                <div class="swiper-slide thankyou_message" style="display:none;">
+                    <img class="header_image" src="img/success_1.svg">
+                    <img class="footer_image_letters" src="img/success_2.svg">
+                    <img class="footer_image_banner" src="img/success_3.svg">
+                </div>
+                
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
 
-   
+
     <script>
         var swiper = new Swiper('.swiper-container', {
             pagination: '.swiper-pagination',
